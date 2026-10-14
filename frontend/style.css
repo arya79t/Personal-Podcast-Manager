@@ -1,0 +1,54 @@
+body{
+    background-color: #050816;
+    color: #ffffff;
+    margin:0;
+    font-family: BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+}
+.left-nav{
+    background:#0b132a;
+    backdrop-filter: blur(20px);
+    border-right: 1px solid #3abbd3;
+    width: 23%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 0px 10px #3abbd3;
+    border-radius: 0px 15px 15px 0px;
+}
+a,#weekly-goal{    
+    text-decoration:none;
+    color:white;
+    padding:10px;        
+    border-radius:8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transform: translateX(0); /* Initial position */
+    transition: transform 0.3s ease-in-out;
+    display: inline-block; 
+    width: 80%;     
+    margin-left: 12px;
+    margin-top: 10px;
+}
+nav a.active,input::file-selector-button{
+    background: linear-gradient(135deg,#1d2e46,#495fa7,#895de2);
+    border: 1.5px solid #3abbd3;
+    font-weight:bold;
+    border-radius:8px;
+    padding:10px;   
+    color:white;
+    cursor:pointer;
+}
+a:hover,a:focus,#weekly-goal:hover{
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 3px 0px 10px #3abbd3;
+    font-weight:bold;
+    transform: translateX(5px);    
+}
+hr{
+    border: 1px dashed #66e1f5;
+    width: 80%;
+    box-shadow: 3px 3px 9px #3abbd3;
+}
