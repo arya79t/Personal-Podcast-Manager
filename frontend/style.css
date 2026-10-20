@@ -6,11 +6,11 @@ body{
 
 }
 .left-nav{
-    background:#0b132a;
-    backdrop-filter: blur(20px);
+    background:radial-gradient(circle at top right,#0b132a,#293761) ;
     border-right: 1px solid #3abbd3;
-    width: 23%;
-    position: fixed;
+    padding-left: 15px;
+    width: 20%;
+    position: fixed; /*To make main content layout to the side */
     top: 0;
     bottom: 0;
     display: flex;
@@ -28,7 +28,7 @@ a,#weekly-goal{
     transform: translateX(0); /* Initial position */
     transition: transform 0.3s ease-in-out;
     display: inline-block; 
-    width: 80%;     
+    width: 70%;     
     margin-left: 12px;
     margin-top: 10px;
 }
@@ -51,4 +51,94 @@ hr{
     border: 1px dashed #66e1f5;
     width: 80%;
     box-shadow: 3px 3px 9px #3abbd3;
+}
+
+/* Main section*/
+main{
+    margin-left: 26%;
+    margin-right: 26%;
+    color: white;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search{
+    background: rgba(255, 255, 255, 0.1);
+    padding:10px;        
+    border-radius:8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 30%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;    
+    gap: 20px;      
+}
+.card1,.card2,.card3{
+    background:radial-gradient(circle at top right,#0b132a,#334073);
+    border-radius:8px;  
+    padding:5px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius:8px;      
+    transition: 1s;
+}
+.card1:hover,.card2:hover,.card3:hover{
+    background: linear-gradient(to right,rgba(250, 250, 250, 0.699), rgba(250, 250, 250, 0.228));
+    box-shadow: 3px 0px 10px #3abbd3;
+    font-weight:bold;
+    transform: translateY(-10px) skew(-5deg); 
+}
+.music-icon,.streak-icon{
+    width:30px;
+    height: 30px;
+    border-radius: 10px;
+}
+.completed-icon{
+    width:30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+/* Right section*/
+.right{
+    width: 20%;
+    background:radial-gradient(circle at top right,#0b132a,#334073) ;
+    border-left: 1px solid #3abbd3;
+    box-shadow: 3px 0px 10px #3abbd3;
+    border-radius: 15px 0px 0px 15px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.resume{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius:8px;  
+    padding:5px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 10px;
+}
+.queue{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius:8px;  
+    padding:5px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 10px;
+}
+.mountain{
+    width: 80%;
+    height: 20%;
+    border-radius: 10px;
+    border: 1px solid #3abbd3;
+    margin-top: 15px;
 }
